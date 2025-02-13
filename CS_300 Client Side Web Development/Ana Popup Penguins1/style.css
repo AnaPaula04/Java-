@@ -1,0 +1,113 @@
+/* This style gives the body element in our HTML a gray background color */
+body {
+    background-color: #f0f8ff;
+}
+
+/* This styles the div in the HTML that contains and centers our penguin game */
+#gameholder {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* This styles the title div in our HTML */
+#title {
+    width: 600px;
+    height: 150px;
+    background-image: url(./media/penguin_title.png);
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+/* General styles for the penguin and yeti divs */
+label.penguin, label.yeti {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 5px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+/* Hide checkboxes */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Initial background images for each div */
+label[for="penguin1"] {
+    background-image: url(./media/mound_1.png);
+}
+label[for="penguin2"] {
+    background-image: url(./media/mound_2.png);
+}
+label[for="penguin3"] {
+    background-image: url(./media/mound_3.png);
+}
+label[for="penguin4"] {
+    background-image: url(./media/mound_4.png);
+}
+label[for="penguin5"] {
+    background-image: url(./media/mound_5.png);
+}
+label[for="penguin6"] {
+    background-image: url(./media/mound_6.png);
+}
+label[for="penguin7"] {
+    background-image: url(./media/mound_7.png);
+}
+label[for="yeti"] {
+    background-image: url(./media/mound_9.png);
+}
+
+/* Hover effects */
+label[for="penguin1"]:hover {
+    background-image: url(./media/mound_1_hover.png);
+}
+label[for="penguin2"]:hover {
+    background-image: url(./media/mound_2_hover.png);
+}
+label[for="penguin3"]:hover {
+    background-image: url(./media/mound_3_hover.png);
+}
+label[for="penguin4"]:hover {
+    background-image: url(./media/mound_4_hover.png);
+}
+label[for="penguin5"]:hover {
+    background-image: url(./media/mound_5_hover.png);
+}
+label[for="penguin6"]:hover {
+    background-image: url(./media/mound_6_hover.png);
+}
+label[for="penguin7"]:hover {
+    background-image: url(./media/mound_7_hover.png);
+}
+label[for="yeti"]:hover {
+    background-image: url(./media/mound_9_hover.png);
+}
+
+/* Click effects (when checkbox is checked) */
+input[type="checkbox"]:checked + label[for="penguin1"] {
+    background-image: url(./media/penguin_1.png);
+}
+input[type="checkbox"]:checked + label[for="penguin2"] {
+    background-image: url(./media/penguin_2.png);
+}
+input[type="checkbox"]:checked + label[for="penguin3"] {
+    background-image: url(./media/penguin_3.png);
+}
+input[type="checkbox"]:checked + label[for="penguin4"] {
+    background-image: url(./media/penguin_4.png);
+}
+input[type="checkbox"]:checked + label[for="penguin5"] {
+    background-image: url(./media/penguin_5.png);
+}
+input[type="checkbox"]:checked + label[for="penguin6"] {
+    background-image: url(./media/penguin_6.png);
+}
+input[type="checkbox"]:checked + label[for="penguin7"] {
+    background-image: url(./media/penguin_7.png);
+}
+input[type="checkbox"]:checked + label[for="yeti"] {
+    background-image: url(./media/yeti.png);
+}

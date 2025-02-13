@@ -1,0 +1,98 @@
+/*Ana Paula McCullagh 
+CS 300 Client Side Web Development
+Instructor: Yehuda Gutstein
+*/
+
+@font-face {
+    font-family: 'GeometriaBold';
+    src: url('../fonts/Geometria-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'GeometriaLight';
+    src: url('../fonts/Geometria-Light.ttf');
+}
+
+@font-face {
+    font-family: 'GeometriaHeavy';
+    src: url('../fonts/Geometria-Heavy.ttf');
+}
+
+@font-face {
+    font-family: 'GeometriaThin';
+    src: url('../fonts/Geometria-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'GeometriaMedium';
+    src: url('../fonts/Geometria-Medium.ttf');
+}
+
+body {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'GeometriaLight', Calibri, Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+}
+
+header h1 {
+    font-family: 'GeometriaHeavy';
+    font-size: 2.5em;
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'GeometriaMedium';
+    font-size: 1.75em;
+    margin-bottom: 10px;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #fff;
+    border-top: 2px solid #ddd;
+}
+
+footer p {
+    margin: 0;
+    font-family: 'GeometriaThin';
+}

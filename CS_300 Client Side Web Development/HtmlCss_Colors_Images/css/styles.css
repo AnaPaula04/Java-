@@ -1,0 +1,78 @@
+body{
+	font-family: calibri, arial, sans-serif;
+}
+
+header{
+	height: 50px;
+}
+
+.big{
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.small{
+	font-weight: 400;
+	text-transform: lowercase;
+}
+
+/* add background image (scenery3.jpg */)
+body{
+
+}
+
+.box{
+	height: 50px;
+}
+
+
+/* set text color (white) and background color (lightBlue) */
+#colorBox1{
+
+}
+
+/* set text color [rgb(241,196,15)] and background color [rgb(52,73,94)] */
+#colorBox2{
+
+}
+
+/* set text color (#8e44ad) and background color (#ecf0f1) */
+#colorBox3{
+
+}
+
+/* set text color [rrgba(44,62,80 ,1)] and background color [rgba(22,160,133 ,.9)] */
+#colorBox4{
+
+}
+
+#pictureBox1{
+	height: 150px;
+	overflow: hidden;
+	/*overflow: scroll;*/
+}
+
+#pictureBox1 img{
+	width: 75%;
+	/*height: 75%;*/
+	vertical-align: text-top; /* top, middle, bottom, text-bottom */
+}
+
+/* Set background image to favicon.ico and background color [rgba(52,152,219 ,.5)]*/
+#pictureBox2{
+
+}
+
+/* Set background image to scenery1.jpg and background color [rgba(52,152,219 ,1)]*/
+#pictureBox3{
+
+}
+
+/* Set background image to scenery2.jpg*/
+#pictureBox3:hover{
+}
+
+/* Set background image to favicon.ico, center and repeat horizontally*/
+#pictureBox3:active{
+
+}

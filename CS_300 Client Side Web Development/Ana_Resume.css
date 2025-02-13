@@ -1,0 +1,169 @@
+/* 1. Universal / Reset Selector - Clears all specified values */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* 2. Type Selecter - Element Name */
+
+/* Make rule for body */
+body {
+	font-family: calibri, arial, sans-serif;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+/* Make rule for div */
+div {
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: 100;
+}
+
+/* 3. ID Selected - id attribute */
+/* Make rule for id (basicId1)*/
+#basicId1 {
+	text-transform: uppercase;
+	letter-spacing: 30px;
+}
+
+/* Make rule for id (basicId2) */
+#basicId2 {
+	text-decoration: line-through;
+	color: red;
+	font-size: 24px;
+}
+
+/* 4. Class Selector - class attribute */
+/* Make rule for class (basicClass1) */
+.basicClass1 {
+	font-family: fantasy;
+	font-weight: 900;
+}
+
+/* 5. Relational Selectors */
+
+/* 5a. Child: parent > child*/
+/* Make rule for section inside of class parent */
+.parent > .child {
+	color: red;
+}
+
+/* 5b. Descendant: parent descendant */
+/* Make rule for all sections inside class parent */
+.parent .descendant {
+	text-indent: 30px;
+}
+
+/* 5c. General Sibling: element ~ all siblings */
+/* Make rule for class sibling at same level as a div with class child */
+.child ~ .sibling {
+	text-decoration: underline;
+}
+
+/* 5d. Adjacent Sibling: element + next sibling */
+/* Make rule for class sibling immediately after a div with class child */
+div.child + .sibling {
+	letter-spacing: 5px;
+	font-weight: 900;
+	text-transform: lowercase;
+}
+
+/* 6. Multiple selectors in one rule set */
+/* Make rule for section, h2, div and class (basicClass1) */
+section, h2, div, .basicClass1 {
+	text-shadow: 1px 1px yellow;
+}
+
+/* 7. Combinations */
+/* Make rule for class (basicClass1) with id (basicId2) */
+.basicClass1#basicId2 {
+	letter-spacing: 10px;
+	line-height: 40px;
+}
+
+/* Make rule for div with class (basicClass1) */
+div.basicClass1 {
+	background-color: lightBlue;
+}
+
+/* 8. Attribute */
+/* Make rule for attribute (name) */
+[name] {
+	font-variant: small-caps;
+	font-size: 20px;
+}
+
+/* Make rule for attribute (name) with value (basicName2) */
+[name='basicName2']{
+	text-align: center;
+}
+
+/* IDs should always be done with # */
+/* Make rule for attribute (id) with value (basicId2) */
+[id='basicId2']{
+	text-align: right;
+}
+
+/* 9. Pseudo Elements: element:part-of-element */
+/* Make rule for first letter of paragraph that is a child to id (pseudo1) */
+#pseudo1 > p:first-letter{
+	text-transform: uppercase;
+	font-size: 24px;
+	font-family: cursive;
+}
+
+/* Make rule for first line of paragraph that is a child to id (pseudo1) */
+#pseudo1 > p:first-line {
+	background-color: yellow;
+	text-indent: 50px;
+}
+
+/* 10a. Psuedo Classes element:occurance */
+/* n = 1,2,3, etc.
+ * 		even, odd
+ *		2n, 3n
+ *		2n+1, 3n+1, 3n+2
+ */
+/* Make rule for 3rd article that is a child to id (pseudo2) */
+#pseudo2 > article:nth-of-type(3) {
+	letter-spacing: 5px;
+}
+
+/* Make rule for even articles that are a child to id (pseudo2) */
+#pseudo2 >article:nth-of-type(even) {
+	color: red;
+	text-align: center;
+}
+
+/* Make rule for odd articles (using 2n+1) that are a child to id (pseudo2) */
+#pseudo2 > article:nth-of-type(2n+1) {
+	text-decoration: overline underline line-through;
+}
+
+/* Make rule for articles that are a child to id (pseudo2) but don't have id (article5) */
+#pseudo2 > article:not(#article5) {
+	font-family: monospace;
+	text-indent: 10px;
+}
+
+/* Make rule for last article that is a descendant to id (pseudo2) */
+#pseudo2 article:nth-last-of-type(1) {
+	font-weight: 900;
+}
+
+/* 10b. Psuedo Classes element:state */
+/* Make rule for id (hoverDiv) when you hover */
+#hoverDiv:hover {
+	letter-spacing: 10px;
+	background: lightGreen;
+	color: white;
+}
+
+/* Make rule for id (clickDiv) when you click (active) */
+#clickDiv:active {
+	letter-spacing: 10px;
+	background: orange;
+	color: white;
+}
+

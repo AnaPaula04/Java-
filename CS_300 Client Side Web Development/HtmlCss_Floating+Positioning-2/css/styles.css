@@ -1,0 +1,155 @@
+body{
+	font-family: GeometriaThin, calibri, arial, sans-serif;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+header{
+	/*
+	 * Set width = 90%
+	 * Set height = 200px
+	 */
+	width: 90%;
+	height: 200px;
+
+	/*
+	 * Set padding = 5% left and right
+	 * Set padding = 25px left and right
+	 */
+	padding: 25px 5%;
+
+	/*
+	 * Set border on the bottom = 2px solid black
+	 */
+	border-bottom: 2px solid black;
+
+	background: white;
+}
+
+header .left{
+	width: 30%;
+	float: left;
+}
+
+header .right{
+	width: 65%;
+	float: right;
+	text-align: right;
+}
+
+footer{
+	width: 90%;
+	height: 50px;
+	padding: 25px 5%;
+	border-top: 2px solid black;
+}
+
+.big{
+	font-size: 50px;
+	text-transform: lowercase;
+	font-family: GeometriaHeavy;
+}
+
+.small{
+	font-size: 25px;
+	text-transform: lowercase;
+	letter-spacing: 5px;
+	font-family: GeometriaLight;
+}
+
+#scrollBtn{
+	/*
+	 * This will be a "sticky" button
+	 * I.E. stuck to the bottom right corner
+	 */
+	height: 100px;
+	width: 100px;
+	font-weight: 900;
+	line-height: 100px;
+	text-align: center;
+	font-size: 32px;
+	border: 2px solid black;
+	background: red;
+	color: white;
+	border-radius: 51px;
+	position: fixed;
+	right: 100px;
+	bottom: 100px;
+	z-index: 100;
+}
+
+#container{
+	background: #ecf0f1;
+	width: 100%;
+	height: 1500px;
+}
+
+.row{
+	width: 100%;
+	float: left;
+}
+
+.col{
+	margin: 10px 1%;
+	height: 150px;
+	line-height: 150px;
+	text-align: center;
+	font-size: 32px;
+	float: left;
+	border: 2px solid #2c3e50;
+}
+
+.col-third{
+	width: 30.55%;
+}
+
+.col-quarter{
+	width: 22%;
+}
+
+.col-full{
+	width: 98%;
+}
+
+.positioning{
+	float: left;
+	width: 100%;
+
+}
+
+.floating{
+	background: white;
+	height: 600px;
+	width: 90%;
+	margin: auto;
+	box-shadow: 5px 5px #7f8c8d;
+}
+
+.main{
+	background: #2c3e50;
+	color: #f1c40f;
+	font-size: 50px;
+	letter-spacing: 35px;
+	line-height: 150px;
+	font-weight: 900;
+	text-align: center;
+	position: relative;
+	font-family: GeometriaHeavy;
+}
+
+.overlay{
+	height: 100%;
+	width: 100px;
+	background: rgba(52,152,219 ,.75);
+	color: white;
+	font-size: 24px;
+	letter-spacing: 10px;
+	line-height: 75px;
+	position: absolute;
+	right: 150px;
+	z-index: 10;
+	top: 0px;
+}

@@ -1,0 +1,219 @@
+<html>
+	<head>
+		<title>HTML &amp; CSS - Form Elements</title>
+		<!-- Title limited to ~65 characters-->
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<meta name="description" content="This is in class work">
+
+		<meta name="keywords" content="html, css, web development, neiu">
+	</head>
+	<body>
+		<header>
+			<section class="left">
+				<div class="big">
+					NEIU
+				</div>
+				<div class="small">
+					CS300
+				</div>
+			</section>
+			<section class="right">
+				<div class="big">
+					HTML &amp; CSS
+				</div>
+				<div class="small">
+					Form Elements
+				</div>
+			</section>
+		</header>
+		<div id="container">		
+			<form action="thankyou.html" method="get">
+				<article>
+					<h2>Input Fields</h2>
+					<section>
+						<div class="row">
+							<label for="inputTxt">Text</label>
+							<!--input text with placeholder-->
+							<input type="text" id="inputTxt" name="txt" placeholder="Enter some text..." />
+						</div>
+						<div class="row">
+							<label for="inpEmail">Email</label>
+							<!--input  with value and readonly-->
+							<input type="email" id="inpEmail" name="email" value="johndoe@gmail.com" readonly />
+						</div>
+						<div class="row">
+							<label for="inpPass">Password</label>
+							<!--input password with minlength and maxlength-->
+							<input type="password" id="inpPass" name="password" minlength="6" maxlength="12" required />
+						</div>
+						<div class="row">
+							<label for="inpRange">Range</label>
+							<!--input  with min, max, step and value-->
+							<input type="range" id="inpRange" name="range" min="10" max="100" step="10" value="30" />
+						</div>
+						<div class="row">
+							<label for="inpNum">Number</label>
+							<!--input number with min, max and step-->
+							<input type="number" id="inpNum" name="num" min="15" max="60" step="15" />
+						</div>
+						<div class="row">
+							<label for="inpFile">File Upload</label>
+							<!--input file-->
+							<input type="file" id="inpFile" name="myFile" />
+						</div>
+						<div class="row">
+							<label>Hidden</label>
+							<!--input hidden-->
+							<input type="hidden" name="notShown" value="You cannot see this" />
+						</div>
+					</section>
+					<section>
+						<div class="row">
+							<label for="txtAreaAdj">Text Area (Adjustable)</label>
+							<!--textarea with placeholder, rows and cols-->
+							<textarea id="txtAreaAdj" name="adjustableText" placeholder="This box is adjustable. Size is set inline with attributes..." rows="4" cols="20"></textarea>
+						</div>
+						<div class="row">
+							<label for="txtAreaNoAdj">Text Area</label>
+							<!--textarea with placeholder-->
+							<textarea id="txtAreaNoAdj" name="fixedText" placeholder="This box is not adjustable. Size is set in CSS..."></textarea>
+						</div>
+					</section>
+				</article>
+				<article>
+					<h2>Selection Fields</h2>
+					<section>
+						<div class="row">
+							<label for="slct">Select (Dropdown)</label>
+							<!--select list with 2nd option selected-->
+							<select id="slct" name="dropdown">
+								<option value="">--Select--</option>
+								<option value="1" selected>Sunday</option>
+								<option value="2">Monday</option>
+							</select>
+						</div>						
+						<div class="row">
+							<label for="slctBox">Select (List Box)</label>
+							<!--option box with size and multiple-->
+							<select id="slctBox" name="selectBox" size="3" multiple>
+								<option value="cubs">Cubs</option>
+								<option value="white sox">White Sox</option>
+								<option value="blackhawks">Blackhawks</option>
+								<option value="bears">Bears</option>
+								<option value="bulls">Bulls</option>
+							</select>
+
+						</div>
+						<div class="row">
+							<label for="slctGroup">Select (List Box w/ Groups)</label>
+							<!--option box with optgroup, size and multiple-->
+							<select id="slctGroup" name="selectBoxGrouped" size="6" multiple>
+								<optgroup label="Baseball">
+									<option value="cubs">Cubs</option>
+									<option value="white sox">White Sox</option>
+								</optgroup>
+								<optgroup label="Hockey">
+									<option value="blackhawks">Blackhawks</option>
+								</optgroup>
+								<optgroup label="Football">
+									<option value="bears">Bears</option>
+								</optgroup>
+								<optgroup label="Basketball">
+									<option value="bulls">Bulls</option>
+								</optgroup>
+							</select>
+						</div>
+
+						<div class="row">
+							<label>Checkbox</label>
+							<!--input checkbox with 2nd box checked-->
+							<div>
+								<div class="checkRow">
+									<label for="chkOne">One</label>
+									<input type="checkbox" id="chkOne" name="firstCheck" value="true" checked/>
+								</div>
+								<div class="checkRow">
+									<label for="chkTwo">Two</label>
+									<input type="checkbox" id="chkTwo" name="secondCheck" value="true" />
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<label>Radio</label>
+							<!--input radio with 1st radio checked-->
+							<div class="checkRow">
+								<label for="radOne">One</label>
+								<input type="radio" id="radOne" name="rad" value="one" checked/>
+							</div>
+							<div class="checkRow">
+								<label for="radTwo">Two</label>
+								<input type="radio" id="radTwo" name="rad" value="two"/>
+							</div>
+						</div>
+					</section>
+				</article>
+				<div class="clear"></div>
+				<article>
+					<h2>Input Buttons</h2>
+					<section>
+						<!--input buttons (reset, submit, button, image)-->
+						<div class="row">		
+							<label>Reset</label>
+							<!--reset-->
+							<input type="reset" value="Clear Form" />
+						</div>
+						<div class="row">		
+							<label>Submit</label>
+							<!--submit-->
+							<input type="submit" value="Submit Form" />8
+						</div>
+						<div class="row">		
+							<label>Image</label>
+							<!--image-->
+							<input type="image" src="images/btn1.jpg" />
+						</div>
+						<div class="row">		
+							<label>Button</label>
+							<!--button-->
+							<input type="button" value="Click Me!" />
+						</div>
+					</section>
+				</article>
+				<article>
+					<h2>Buttons</h2>
+					<section>
+						<!--button (with text, image, and both) (default is treated as submit)-->
+						<div class="row">		
+							<label>Text</label>
+							<!--reset-->
+							<button type="reset" class="btnPlain">Clear Form</button>
+						</div>
+						<div class="row">		
+							<label>Image</label>
+							<!--image-->
+							<button><img src="images/btn2.png" /></button>
+						</div>
+						<div class="row">		
+							<label>Image and Text</label>
+							<!--image and text-->
+							<button type="button">Text<img src="images/btn1.jpg" /></button>
+						</div>
+					</section>
+				</article>
+			</form>
+			
+		</div>
+		<div class="clear"></div>
+		<footer>
+			<section class="left ftrLeft">
+				Northeastern Illinois University - CS300
+			</section>
+			<section class="right ftrRight">
+				&copy; Copyright 2018
+			</section>
+		</footer>
+	</body>
+</html>

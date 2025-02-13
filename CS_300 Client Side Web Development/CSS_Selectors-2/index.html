@@ -1,0 +1,121 @@
+<html>
+	<head>
+		<title>CSS - Selectors</title>
+		<!-- Title limited to ~65 characters-->
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<meta name="description" content="This is in class work">
+
+		<meta name="keywords" content="html, css, web development, neiu">
+	</head>
+	<body>
+		<header>
+			<section class="left">
+				<div class="big">
+					NEIU
+				</div>
+				<div class="small">
+					CS300
+				</div>
+			</section>
+			<section class="right">
+				<div class="big">
+					HTML &amp; CSS
+				</div>
+				<div class="small">
+					Selectors
+				</div>
+			</section>
+		</header>
+		<div id="container">
+			<h2>Basic Selectors</h2>
+			<div id="basic1">
+				<div id="basicId1">
+					Div with ID
+				</div>
+				<div id="basicId2" class="basicClass1">
+					Div with ID (#2) and Class (#1)
+				</div>
+				<div class="basicClass1">
+					Div with Class (#1)
+				</div>
+				<section class="basicClass1">
+					Section with Class (#1)
+				</section>
+				<section name="basicName1">
+					Section with Name (#1)
+				</section>
+				<section name="basicName2">
+					Section with Name (#2)
+				</section>
+			</div>
+			<h2>Relational Selectors</h2>
+			<div id="relational">
+				<div class="parent">
+					Parent
+					<div class="child">
+						Child 1
+						<section class="descendant">
+							Descendant 1
+						</section>
+						<section class="descendant">
+							Descendant 2
+						</section>
+						<section class="descendant">
+							Descendant 3
+						</section>
+					</div>
+					<section class="child sibling">
+						Child 2
+					</section>
+					<section class="child sibling">
+						Child 3
+					</section>
+				</div>
+			</div>
+			<h2>Pseudo Elements</h2>
+			<div id="pseudo1">
+				<p>
+					paragraph Line #1<br/>
+					paragraph Line #2
+				</p>
+			</div>
+			<h2>Pseudo Classes (Occurance)</h2>
+			<div id="pseudo2">
+				<article>
+					Article #1
+				</article>
+				<article>
+					Article #2
+				</article>
+				<article>
+					Article #3
+				</article>
+				<article>
+					Article #4
+				</article>
+				<article id="article5">
+					Article #5
+				</article>
+			</div>
+			<h2>Pseudo Elements (State)</h2>
+			<div id="pseudo3">
+				<div id="hoverDiv">
+					Hover over this Div
+				</div>
+				<div id="clickDiv">
+					Click this Div
+				</div>
+			</div>
+		<div class="clear"></div>
+		<footer>
+			<section class="left ftrLeft">
+				Northeastern Illinois University - CS300
+			</section>
+			<section class="right ftrRight">
+				&copy; Copyright 2018
+			</section>
+		</footer>
+	</body>
+</html>

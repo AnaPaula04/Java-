@@ -1,0 +1,24 @@
+/*
+ * Rules sets may be created using 3 types of selectors:
+ *	1. type = element type (body, div, span, h1, etc.)
+ *	2. id = id attribute --> starts with # (#divOne)
+ *	3. class = class attribute --> starts with . (.allDivs)
+ */
+
+/*
+ * Rule Sets - May contain 1+ rules
+ * 
+ * selector {
+ * 	  ruleName: value;
+ * }
+ */
+
+/* Type Selector */
+	/* Change font type: font-family */
+	/* default = serif */
+
+
+	/* Aligning Text: text-align */
+	/* default = left */
+
+/* Create a custom font */

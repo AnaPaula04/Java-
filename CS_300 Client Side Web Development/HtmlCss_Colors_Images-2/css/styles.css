@@ -1,0 +1,91 @@
+body{
+	font-family: calibri, arial, sans-serif;
+}
+
+header{
+	height: 200px;
+	background: url('../images/scenery3.jpg');
+	background-attachment: fixed; /* scroll */
+}
+
+
+.big{
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.small{
+	font-weight: 400;
+	text-transform: lowercase;
+}
+
+/* add background image (scenery3.jpg ) */ 
+#pictures{
+	background: url('../images/scenery3.jpg');
+	background-attachment: fixed; /* scroll */
+}
+
+.box{
+	height: 50px;
+}
+
+
+/* set text color (white) and background color (lightBlue) */
+#colorBox1{
+	color: white;
+	background-color: lightBlue;
+}
+
+/* set text color [rgb(241,196,15)] and background color [rgb(52,73,94)] */
+#colorBox2{
+	color: rgb(241, 196, 16);
+	background: rgb(52, 73, 94);
+}
+
+/* set text color (#8e44ad) and background color (#ecf0f1) */
+#colorBox3{
+	color: #8e44ad;
+	background: #ecf0f1;
+}
+
+/* set text color [rgba(44,62,80 ,1)] and background color [rgba(22,160,133 ,.9)] */
+#colorBox4{
+	color: rgba(44, 62, 80, 1);
+	background-color: rgba(22, 160, 133, .5);
+}
+
+#pictureBox1{
+	height: 150px;
+	overflow: hidden;
+	/*overflow: scroll;*/
+}
+
+#pictureBox1 img{
+	/*width: 75%;*/
+	height: 75%;
+	vertical-align: middle; /* top, middle, bottom, text-bottom */
+}
+
+/* Set background image to favicon.ico and background color [rgba(52,152,219 ,.5)]*/
+#pictureBox2{
+	background-image: url(../images/favicon.ico);
+	background-repeat: repeat-x; /* repeat, no-repeat, repeat-x, repeat-y */
+	background-color: rgba(52, 152, 219, .5);
+}
+
+/* Set background image to scenery1.jpg and background color [rgba(52,152,219 ,1)]*/
+#pictureBox3{
+	background: url(../images/scenery1.jpg) rgba(52, 152, 219, 1) no-repeat;
+	background-size: 10%;
+}
+
+/* Set background image to scenery2.jpg*/
+#pictureBox3:hover{
+	background-image: url(../images/scenery2.jpg);
+	background-position: right center;
+}
+
+/* Set background image to favicon.ico, center and repeat horizontally*/
+#pictureBox3:active{
+	background: url(../images/favicon.ico) repeat-x center center;
+}

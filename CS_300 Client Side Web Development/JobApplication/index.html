@@ -1,0 +1,58 @@
+<!-- Ana Paula McCullagh 
+CS 300 Client Side Web Development
+Instructor: Yehuda Gutstein
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Job Application</h1>
+        <p>Apply for your dream job by filling out the form below.</p>
+    </header>
+    <main>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="position">Position:</label>
+            <select id="position" name="position">
+                <option value="developer">Developer</option>
+                <option value="designer">Designer</option>
+                <option value="manager">Manager</option>
+            </select><br>
+
+            <label>Skills:</label><br>
+            <input type="checkbox" id="html" name="skills" value="html">
+            <label for="html">HTML</label><br>
+            <input type="checkbox" id="css" name="skills" value="css">
+            <label for="css">CSS</label><br>
+            <input type="checkbox" id="js" name="skills" value="javascript">
+            <label for="js">JavaScript</label><br>
+
+            <label>Experience Level:</label><br>
+            <input type="radio" id="beginner" name="experience" value="beginner">
+            <label for="beginner">Beginner</label><br>
+            <input type="radio" id="intermediate" name="experience" value="intermediate">
+            <label for="intermediate">Intermediate</label><br>
+            <input type="radio" id="advanced" name="experience" value="advanced">
+            <label for="advanced">Advanced</label><br>
+
+            <label for="cover_letter">Cover Letter:</label><br>
+            <textarea id="cover_letter" name="cover_letter" rows="4" cols="50"></textarea><br>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume"><br>
+
+            <input type="submit" value="">
+        </form>
+    </main>
+</body>
+</html>

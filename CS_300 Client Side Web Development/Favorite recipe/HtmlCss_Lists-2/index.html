@@ -1,0 +1,151 @@
+<html>
+	<head>
+		<title>HTML &amp; CSS - Lists</title>
+		<!-- Title limited to ~65 characters-->
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<meta name="description" content="This is in class work">
+
+		<meta name="keywords" content="html, css, web development, neiu">
+	</head>
+	<body>
+		<header>
+			<section class="left">
+				<div class="big">
+					NEIU
+				</div>
+				<div class="small">
+					CS300
+				</div>
+			</section>
+			<section class="right">
+				<div class="big">
+					HTML &amp; CSS
+				</div>
+				<div class="small">
+					Lists
+				</div>
+				<nav class="navHorizontal">
+					<ul>
+						<li>
+							<a href="index.html" class="current">Page 1</a>
+						</li>
+						<li>
+							<a href="page2.html">Page 2</a>
+						</li>
+						<li>
+							<a href="page3.html">Page 3</a>
+						</li>
+						<li>
+							<a href="http://www.google.com" target="_blank">Google</a>
+						</li>
+					</ul>
+				</nav>
+			</section>
+		</header>
+		<div id="container">
+			<article>
+				<h1>Page 1</h1>
+				<section>
+					<h2>Ordered Lists</h2>
+					<div class="content">
+						<!-- olOne -->
+						<ol id="olOne">
+							<li>One</li>
+							<li>Two</li>
+							<li>Three</li>
+						</ol>
+						<!-- olTwo -->
+						<ol id="olTwo" start="4">
+							<li>Four</li>
+							<li>Five</li>
+							<li>Six
+								<ol id="olTwoNested">
+									<li>Six-1</li>
+									<li>Six-2</li>
+									<li>Six-3</li>
+								</ol>
+							</li>
+						</ol>
+						<!-- olTwoNested -->
+					</div>
+				</section>
+				<section>
+					<h2>UnOrdered Lists</h2>
+					<div class="content">
+						<!-- ulOne -->
+						<ul id="ulOne">
+							<li>One</li>
+							<li>Two</li>
+							<li>Three</li>
+						</ul>
+						<!-- ulTwo -->
+						<ul id="ulTwo">
+							<li>Four</li>
+							<li>Five</li>
+							<li>Six
+								<ul id="ulTwoNested">
+									<li>Six-1</li>
+									<li>Six-2</li>
+									<li>Six-3</li>
+								</ul>
+							</li>
+						</ul>
+						<!-- ulTwoNested -->
+						<!-- ulThree -->
+						<ul id="ulThree">
+							<li>Seven</li>
+							<li>Eight</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h2>Definition Lists</h2>
+					<div class="content">
+						<dl>
+							<dt>Term</dt>
+							<dd>Definition 1</dd>
+							<dd>Definition 2</dd>
+
+							<dt>Term 2</dt>
+							<dd>Definition 1</dd>
+						</dl>
+					</div>
+				</section>
+			</article>
+			<aside>
+				<h3>Sidebar</h3>
+				<nav class="navVertical">
+					<ul>
+						<li>
+							<a href="index.html" class="current">Page 1</a>
+						</li>
+						<li>
+							<a href="page2.html">Page 2</a>
+						</li>
+						<li>
+							<a href="page3.html">Page 3</a>
+						</li>
+						<li>
+							<a href="http://www.google.com" target="_blank">Google</a>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+		</div>
+		<div class="clear"></div>
+		<footer>
+			<section class="left ftrLeft">
+				Northeastern Illinois University - CS300
+			</section>
+			<section class="right ftrRight">
+				&copy; Copyright 2018
+			</section>
+		</footer>
+		<div id="scrollBtn">
+			Top
+		</div>
+	</body>
+</html>

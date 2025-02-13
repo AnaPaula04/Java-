@@ -1,0 +1,224 @@
+body{
+	float: left;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: GeometriaMedium, calibri, arial, sans-serif;
+}
+
+header{
+	float: left;
+	width: 96%;
+	height: 75px;
+	padding: 20px 2%;
+	border-bottom: 2px solid black;
+	background: #f7f7f7;
+	z-index: 5;
+	color: #2c3e50;
+}
+
+header .left{
+	font-size: 36px;
+}
+
+header .right{
+	font-size: 18px;
+}
+
+header .small{
+	color: #f1c40f;
+}
+
+.left{
+	float: left;
+	width: 40%;
+}
+
+.right{
+	float: right;
+	width: 40%;
+	text-align: right;
+}
+
+.big{
+	font-weight: 900;
+	text-transform: uppercase;
+	font-family: GeometriaHeavy;
+}
+
+.small{
+	font-weight: 400;
+	text-transform: lowercase;
+	font-family: GeometriaLight;
+}
+
+#container{
+	float: left;
+	width: 100%;
+}
+
+article{
+	float: left;
+	width: 80%;
+	padding: 2% 10% 0 10%;
+	min-width: 490px;
+	height: auto;
+}
+
+form{
+	float: left;
+	width: 100%;
+	color: #2c3e50;
+}
+
+	form article{
+		padding: 5%;
+		width: 35%;
+		float: left;
+	}
+
+	form article:nth-of-type(odd){
+		border-right: 2px solid #2c3e50;
+	}
+
+h2{
+	float: left;
+	clear: both;
+	width: 50%;
+}
+
+div{
+	float: left;
+	clear: both;
+	width: 100%;
+	
+}
+
+.clear{
+	float: left;
+	width: 100%;
+	clear: both;
+}
+
+footer{
+	float: left;
+	width: 100%;
+	padding: 20px 0;
+	margin-top: 30px;
+	border-top: 5px double black;
+}
+
+.ftrLeft{
+	padding-left: 2%;
+}
+
+.ftrRight{
+	padding-right: 2%;
+}
+
+/*Forms Elements*/
+.row{
+	width: 90%;
+	margin: 5px 5%;
+}
+
+label{
+	float: left;
+	font-size: 24px;
+	line-height: 44px;
+	color: #34495e;
+	width: 200px;
+	margin-right: 10px;
+}
+
+input, select{
+	border: 2px solid #2c3e50;
+	height: 40px;
+	padding-left: 10px;
+	width: 250px;
+	font-size: 24px;
+}
+
+select[size]{
+	height: auto;
+}
+
+input:required{
+	border-color: rgb(155,89,182);
+}
+
+input:valid{
+	background-color: rgba(46,204,113 ,.3);
+}
+
+input:invalid{
+	background-color: rgba(231,76,60 ,.3);
+	border-color: rgb(231,76,60);
+}
+
+input[type=file]{
+	border: none;
+	width: 300px;
+	font-size: 12px;
+	padding: 12px;
+}
+
+input[type=image]{
+	border: none;
+	height: auto;
+	width: auto;
+	outline: none;
+}
+
+button.btnPlain, input[type=submit], input[type=reset], input[type=button]{
+	height: 50px;
+	width: 200px;
+	background-color: #34495e;
+	color: #ecf0f1;
+	cursor: pointer;
+	outline: none;
+	box-shadow: 5px 5px rgba(189,195,199 ,1);
+}
+
+button.btnPlain:active, input[type=submit]:active, input[type=reset]:active, input[type=button]:active{
+	background-color: #f1c40f;
+	color: #2c3e50;
+}
+
+button:not(#btnPlain){
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+
+textarea{
+	border: 2px solid #2c3e50;
+	font-size: 24px;
+	padding: 5px;
+}
+
+#txtAreaNoAdj{
+	height: 100px;
+	width: 250px;
+	resize: none;
+}
+
+.checkRow label{
+	margin-left: 50px;
+	width: 50px;
+}
+
+input[type=checkbox], input[type=radio]{
+	width: 50px;
+}
+
+/*Colors*/
+/*
+	translucent red --> rgba(231,76,60 ,.3)
+	midnight blue --> #2c3e50
+	silver  --> #bdc3c7
+	sunflower --> #f1c40f
+	emerland --> #2ecc71
+	wisteria --> #8e44ad
+	wetasphalt --> #34495e
+*/

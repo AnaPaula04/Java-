@@ -1,0 +1,212 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #333;
+    font-weight: 400;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Header styles */
+header {
+    width: 100%;
+    box-shadow: 0 12px 28px 0 rgba(0, 0, 0, .2), 0 2px 4px 0 rgba(0, 0, 0, .1), inset 0 0 0 1px rgba(255, 255, 255, .5)!important;
+    background: white;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    padding: .75rem 1rem;
+}
+
+#brand {
+    font-size: 1.25rem;
+    line-height: inherit;
+    display: inline-block;
+    margin-right: 1rem;
+    padding-top: .2875rem;
+    padding-bottom: .2875rem;
+    white-space: nowrap;    
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin-bottom: 0;
+    padding-left: 0;
+    justify-content: center;
+}
+
+header nav ul li a {
+    padding-top: .2rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    letter-spacing: 0;
+    text-transform: none;
+    padding-bottom: .2rem;
+    color: #3c4858;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #06f;
+}
+
+/* Hero section styles */
+#hero {
+    text-align: center;
+    padding: 2rem 1rem;
+    background:#0c38e8;
+}
+
+#hero h1 {
+    margin-top:6rem;
+    color:white;    
+    font-size: 2.5rem;
+}
+
+#hero p {
+    margin-bottom: 1.5rem;
+    margin-bottom: 6rem;
+    color:white;
+    font-size: 1.25rem;
+}
+
+/* Contact section styles */
+#contact {
+    padding: 2rem 1rem;
+    background: #fff;
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+form {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+form div {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: .5rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size:16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+form button {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    display: inline-block;
+    padding: .75rem 1.75rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    text-align: center;
+    vertical-align: middle;
+    color: #4b5e77;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background-color: transparent;
+    border-color: #eff2f7;
+    background-color: #eff2f7;
+    float:right;
+}
+
+form button:hover {
+    border-color: #cdd6e6;
+    background-color: #d6ddea;
+}
+
+/* FAQ section styles */
+#faq {
+    padding: 2rem 1rem;
+    background: #fff;
+    text-align: center;
+}
+
+#faq h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+#faq p {
+    font-size: 1rem;
+}
+
+/* Pricing section styles */
+#pricing {
+    padding: 2rem 1rem;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+#pricing h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+#pricing p {
+    font-size: 1rem;
+}
+
+/* Features section styles */
+#features {
+    padding: 2rem 1rem;
+    background: #fff;
+    text-align: center;
+}
+
+#features h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+#features p {
+    font-size: 1rem;
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+#contactForm {
+
+}

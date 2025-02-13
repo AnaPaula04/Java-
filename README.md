@@ -1,4 +1,4 @@
-# Java-
+# HTML-
 Collection of my Java work 
 
-Hello, my name is Ana and I am practicing Git.
+Hello, my name is Ana and I am practicing Git. 

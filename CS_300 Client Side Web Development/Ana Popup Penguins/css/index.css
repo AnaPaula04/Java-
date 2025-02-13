@@ -1,0 +1,81 @@
+/* This style gives the body element in our HTML a gray background color */
+body {
+    background-color: #f0f8ff;
+}
+
+/* This styles the div in the HTML that contains and centers our penguin game */
+#gameholder {
+    width: 600px;
+    margin: 0 auto;
+}
+
+#title {
+    width: 600px;
+    height: 150px;
+    background-image: url(../media/penguin_title.png);
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+label.penguin, label.yeti {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 5px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label[for^="penguin"] {
+    background-image: url(../media/mound_1.png); /* Default mound image */
+}
+
+label[for="yeti"] {
+    background-image: url(../media/mound_9.png); /* Yeti mound image */
+}
+
+/* Hover effects */
+label[for^="penguin"]:hover {
+    background-image: url(../media/mound_hover.png); /* Hover effect for all penguin mounds */
+}
+
+label[for="yeti"]:hover {
+    background-image: url(../media/mound_9_hover.png); /* Hover effect for yeti mound */
+}
+
+/* Click effects (when checkbox is checked) */
+input[type="checkbox"]:checked + label[for="penguin1"] {
+    background-image: url(../media/penguin_1.png); /* Revealed penguin image */
+}
+
+input[type="checkbox"]:checked + label[for="penguin2"] {
+    background-image: url(../media/penguin_2.png); /* Revealed penguin image */
+}
+
+input[type="checkbox"]:checked + label[for="penguin3"] {
+    background-image: url(../media/penguin_3.png); /* Revealed penguin image */
+}
+
+input[type="checkbox"]:checked + label[for="penguin4"] {
+    background-image: url(../media/penguin_4.png); /* Revealed penguin image */
+}
+
+input[type="checkbox"]:checked + label[for="penguin5"] {
+    background-image: url(../media/penguin_5.png); /* Revealed penguin image */
+}
+
+input[type="checkbox"]:checked + label[for="penguin6"] {
+    background-image: url(../media/penguin_6.png); /* Revealed penguin image */
+}
+
+input[type="checkbox"]:checked + label[for="penguin7"] {
+    background-image: url(../media/penguin_7.png); /* Revealed penguin image */
+}
+
+input[type="checkbox"]:checked + label[for="yeti"] {
+    background-image: url(../media/yeti.png); /* Revealed yeti image */
+}
