@@ -1,4 +1,4 @@
 # HTML-
-Collection of my Java work 
+Collection of my CS work 
 
 Hello, my name is Ana and I am practicing Git. 
